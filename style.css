@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+form {
+    background-color: #fbfbfb;
+    width: 600px;
+    border-radius: 25px;
+    height: 470px;
+    border-bottom-right-radius: 160px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 30px;
+    position: relative;
+}
+
+.inputs {
+    display: flex; /* Arrange labels and inputs vertically */
+    gap: 20px; /* Space between input groups */
+}
+
+label {
+    font-size: 12px; /* Adjust label font size */
+    margin-bottom: 5px; /* Space between label and input */
+    display: block; /* Ensure label is a block element */
+    font-weight:700 ;
+    letter-spacing: 2px;
+}
+
+input {
+    font-size: 27px; /* Adjust input font size */
+    width: 100px; /* Make input fill the width of the container */
+    height: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ccc; /* Add a border to the input */
+    border-radius: 5px; /* Rounded corners for the input */
+}
+hr{
+    margin-top: 40px;
+    background-color: #f0f0f0;
+}
+.G{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 299px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.G:hover{
+    transform: rotate(90deg);
+}
+.resulte{
+    display: flex;
+    flex-direction: column;
+    padding: 0 ;
+}
+.resulte div{
+    width: 30%;
+    font-style:italic ;
+    display: flex;
+    font-weight: 800;
+    justify-content: space-between;
+    font-size: 34px;
+
+}
+span{
+    font-size: 70px;
+    color: hsl(259, 100%, 65%);
+}
+
+
+/* Responsiv web to mobile */
+
+@media (max-width:645px){
+    form{
+        width: 500px;
+    }
+}
+@media (max-width:547px){
+    form{
+        width: 400px;
+    }
+    span{
+        font-size: 50px;
+    }
+    .G{
+        right: 170px;
+    }
+    .resulte div{
+        font-size: 30px;
+    }
+}
+@media (max-width:415px){
+    form{
+        width: 300px;
+    }
+    .G{
+        right: 110px;
+    }
+    input{
+        width: 70px;
+    }
+    .resulte div h1{
+        font-size: 40px;
+    }
+    .resulte{
+        margin-top: 40px;
+    }
+    .resulte div span{
+        font-size: 40px;
+    }
+}

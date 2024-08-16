@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <form id="age-form">
+
+
+        <div class="inputs">
+            <div class="input1">
+                <label for="day">Day</label>
+                <input id="day" type="number" min="1" max="31" placeholder="DD" required>
+            </div>
+            <div class="input2">
+                <label for="month">Month</label>
+                <input id="month" type="number" min="1" max="12" placeholder="MM" required>
+            </div>
+            <div class="input3">
+                <label for="year">Year</label>
+                <input id="year" type="number" placeholder="YYYY" required>
+            </div>
+            <button type="submit" id="calculate" class="G">+</button>
+        </div>
+
+
+        <hr>
+
+
+
+        <div class="resulte">
+            <div class="years-R">
+                <span id="sy">-</span><h1>years</h1>
+            </div>
+            <div class="months-R">
+                <span id="sm">-</span><h1>months</h1>
+            </div>
+            <div class="days-R">
+                <span id="sd">-</span><h1>days</h1>
+            </div>
+        </div>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
